@@ -1,0 +1,8 @@
+compute.m计算的是输入两个同样大小的图片，输出他们的DDIS score
+SpatialDDIS中计算的是对图像进行分部分计算DDIS score，并对不同部分赋予不同的权重，因为是
+每一个targetImg在sourceImg中计算DDIS score，所以targetImg的行和列都小于sourceImg
+所以这里使用的是同样使用run_TreeCANN计算得到NNF，然后再使用DDISscoreCompute计算最大的DDISscore
+IdentifyCar.m计算的是对200对图片分别计算他们的score，得到一个200*200的矩阵存储score。
+［user］
+ email＝qiumk@outlook.com
+ name＝mandrenday
